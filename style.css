@@ -1,0 +1,2950 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* WhatsApp logo styling */
+.whatsappp {
+    position: fixed;
+    bottom: 10px;
+    right: 5px;
+    z-index: 1000;
+}
+
+.whatsappp img {
+    width: 90px;
+    height: auto;
+}
+
+/* navbar */
+.navbar {
+    background-color: #ff8000;
+    padding: 10px 20px;
+}
+
+.search-container {
+    position: relative;
+    width: 70vw;
+    margin: auto;
+}
+.search-container > i{
+    position: absolute;
+    top:0;
+    color: rgb(175, 175, 175);
+    font-size: 1.1rem;
+    font-weight:bolder;
+    padding: 10px 0 0 8px ;
+    line-height: auto;
+}
+.search-bar {
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    padding: 8px 15px;
+}
+
+.search-bar:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+@media (max-width: 768px) {
+    .search-container {
+        width: 80vw;
+    }
+}
+
+/* Search dropdown */
+.secrh-bar-openmenu {
+    background-color: rgb(252, 252, 252);
+    width: 100%;
+    border: 1px solid rgb(208, 208, 208);
+    height: 300px;
+    overflow-y: auto;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    margin-top: 10px;
+    top: 100%;
+    left: 0;
+    display: none;
+    z-index: 100;
+    border-radius: 5px;
+}
+
+.secrh-bar-openmenu b {
+    display: block;
+    padding: 5px 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.secrh-bar-openmenu a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    padding: 8px 0;
+}
+
+.secrh-bar-openmenu a:hover {
+    background-color: rgb(242, 242, 242);
+}
+
+/* header */
+header {
+    width: 100%;
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+.header-menu {
+    width: 75vw;
+}
+
+.logo a>img {
+    width: 160px !important;
+}
+
+.nav-links {
+    background: white;
+    box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 35vw;
+    flex-grow: 1;
+    margin: 0 20px;
+   
+}
+
+.nav-links ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links ul li {
+    font-weight: 600;
+    font-size: 1rem;
+    color: rgb(119, 119, 119);
+    display: flex;
+    align-items: center;
+}
+
+.nav-links ul li:hover {
+    background-color: rgba(220, 220, 220, 0.4);
+    border-radius: 10px;
+}
+
+.nav-links ul li.active {
+    background-color: orange;
+    border-radius: 10px;
+    color: white;
+}
+
+.nav-links ul li>a>span {
+    color: rgb(119, 119, 119);
+}
+
+.nav-links ul li img {
+    border-radius: 50%;
+    border: 1px solid rgb(223, 223, 223);
+    padding: 2px;
+}
+
+.btn {
+    border: 1px solid #ff840c;
+    color: #ff840c;
+    background: transparent;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #ff840c;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 992px) {
+    .nav-links {
+        max-width: 62vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-menu {
+        width: 100%;
+    }
+
+    .logo img {
+        width: 140px;
+        margin-left: -20px !important;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+        padding: 8px 15px;
+    }
+
+    .mobile-menu-img {
+        background: white;
+        box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 10px;
+        width: auto;
+        flex-grow: 1;
+        margin: 0 20px;
+    }
+}
+
+@media (min-width: 576px) {
+    .mobile-menu-img {
+        max-width: 40vw;
+        margin: auto;
+    }
+}
+
+@media (min-width: 320px) {
+    .logo img {
+        width: 120px !important;
+    }
+}
+
+/* hero-section */
+.main-section h2 {
+    color: #ff840c;
+    font-size: 2.2rem;
+    font-weight: 600;
+    font-family: Radio Canada, sans-serif;
+}
+
+.main-section p {
+    font-size: 1.0rem;
+}
+
+.banner {
+    margin-top: 80px;
+    justify-content: center;
+    margin-left: 120px;
+}
+
+.btn-orange {
+    background-color: #ff8309;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    margin: 10px 0px 0px 0px;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.btn-orange:hover {
+    background-color: #e67300;
+}
+
+.testimonial-section {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.testimonial {
+    line-height: 30px;
+    background-color: #fff1e3;
+    color: #ff840c;
+    padding: 15px 0px 15px 90px;
+    border-radius: 12px;
+    display: flex;
+    width: 24vw;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 0 0 30px 10px;
+}
+
+.side-img {
+    margin-left: 50px !important;
+}
+
+.testimonial video {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    left: -20px;
+    padding: 8px;
+}
+
+@media (max-width: 992px) {
+    .main-section h2 {
+        font-size: 2.0rem;
+    }
+
+    .banner {
+        margin-top: 90px;
+        margin-left: -20px;
+    }
+
+    .testimonial {
+        padding: 10px 0px 10px 80px;
+        width: auto;
+        margin: 0 0 25px 0px;
+    }
+
+    .testimonial video {
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-section h2 {
+        font-size: 2.0rem;
+    }
+
+    .main-section p {
+        font-size: 0.9rem;
+    }
+
+    .banner {
+        margin-top: 90px;
+        margin-left: -35px;
+    }
+
+    .testimonial {
+        padding: 10px 0px 10px 70px;
+        width: auto;
+        margin: 0 0 25px 0px;
+    }
+
+    .side-img {
+        margin-left: 30px !important;
+    }
+
+    .testimonial video {
+        width: 90px;
+        height: 90px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-section h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .banner {
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+
+    .testimonial-section {
+        margin: 40px auto;
+    }
+
+    .testimonial p {
+        padding-top: 8px;
+    }
+
+    .testimonial {
+        line-height: 0px;
+        background-color: #fff1e3;
+        color: #ff840c;
+        padding: 15px 0px 15px 60px;
+        width: auto;
+        margin: 0 0 25px 0px;
+        font-size: 0.95rem;
+    }
+
+    .side-img {
+        margin-left: 20px !important;
+    }
+
+    .testimonial video {
+        width: 80px;
+        height: 80px;
+        padding: 8px;
+    }
+}
+
+/* yesterday's invention */
+.invention-stat {
+    margin-top: 150px;
+}
+
+.stats-section {
+    width: 73vw;
+    gap: 70px;
+    align-items: center;
+}
+
+.stats-section h2 {
+    font-weight: bold;
+    font-family: Ranga, sans-serif;
+    font-size: 1.8rem;
+    width: 15vw;
+}
+
+.stats-count {
+    text-align: center;
+    padding: auto 30px;
+}
+
+.stats-count span {
+    font-size: 2.7rem;
+    font-weight: bold;
+    color: #ff840c;
+}
+
+.stats-count p {
+    font-size: 1.3rem;
+    color: #000000;
+    font-weight: 500;
+    width: 15vw;
+    font-family: var(--e-global-typography-secondary-font-family), Sans-serif;
+}
+
+@media (max-width: 992px) {
+    .stats-section {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .stats-section div {
+        padding-left: 30px;
+    }
+
+    .stats-count span {
+        font-size: 2.1rem;
+        font-weight: bold;
+        color: #ff840c;
+    }
+
+    .stats-count {
+        margin-left: -20px !important;
+    }
+
+    .stats-count p {
+        font-size: 1.2rem;
+        width: auto;
+    }
+
+    .stats-section h2 {
+        width: 30vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .stats-section h2 {
+        width: auto;
+    }
+
+    .stats-section {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .stats-section div {
+        padding-left: 30px;
+    }
+
+    .stats-count {
+        width: 25vw;
+    }
+
+    .stats-count span {
+        font-size: 2.1rem;
+        font-weight: bold;
+        color: #ff840c;
+    }
+}
+
+@media (max-width: 576px) {
+    .invention-stat {
+        margin-top: 50px;
+    }
+
+    .stats-section h2 {
+        width: auto;
+        padding-left: 0px;
+        text-align: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .stats-count p {
+        width: auto;
+    }
+
+    .stats-count {
+        margin-top: 20px;
+        width: 80vw;
+        text-align: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/* Instagram form section */
+.insta-form {
+    width: 25vw;
+    margin: auto 10px;
+    background: #fafafa;
+    border-radius: 4px;
+    padding: 0;
+    box-shadow: 2px 2px 5px rgb(112, 112, 112, .4);
+}
+.profile-img {
+    width: 70px !important;
+    border-radius: 50%;
+    border: 3px solid #ff3e6b;
+}
+
+.username {
+    font-weight: 500;
+    color: #a3a3a3;
+}
+
+.username i {
+    color: #2525ff;
+}
+
+.stats {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 -20px;
+
+}
+
+.stats p {
+    padding: -50px auto;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+}
+
+.stats span {
+    padding: -50px auto;
+    font-size: 1.1rem;
+    color: #939292;
+}
+
+.follow-btn {
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 20px !important;
+    margin-right: -10px !important;
+}
+
+.dot-icon {
+    font-size: 1.3rem;
+    padding-left: 20px;
+}
+
+.bio {
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.bio p {
+    font-size: 0.9rem;
+    font-family: Radio Canada, Sans-serif;
+    color: #7f7f7f;
+    font-weight: 500;
+}
+
+.section-title {
+    text-align: center;
+    font-weight: bold;
+    background-color: #ffffff;
+    padding: 10px 0;
+    color: #000000;
+    font-size: 1.15rem;
+}
+
+@media (max-width: 992px) {
+    .insta-form {
+        width: 47vw !important;
+    }
+
+    .insta-form-section {
+        margin: auto 10px !important;
+    }
+
+    .username {
+        font-size: 1.1rem !important;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 768px) {
+    .insta-form {
+        width: 47vw !important;
+    }
+
+    .insta-form-section {
+        margin: auto 10px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .insta-form {
+        width: 100% !important;
+    }
+
+    .insta-form-section {
+        margin: 0px;
+    }
+
+    .dot-icon {
+        font-size: 1.0rem !important;
+        padding-left: 15px !important;
+    }
+
+    .profile-img {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .username {
+        font-size: 0.9rem !important;
+    }
+
+    .follow-btn {
+        background-color: #0095f6;
+        color: white;
+        border: none;
+        padding: 5px 8px;
+        font-size: 10px;
+    }
+
+    .stats p {
+        font-size: 1.0rem !important;
+    }
+
+    .stats span {
+        font-size: 0.9rem !important;
+    }
+}
+
+/* 3 easy steps  */
+.owl-theme .owl-dots .owl-dot {
+    display: none !important;
+    zoom: 1;
+}
+.step-icons-section {
+    width: 72vw;
+}
+
+.step-section-mobile {
+    display: none;
+}
+
+.step-icon div,
+.mobile-box {
+    width: 100px;
+    height: 100px;
+    background: #ffeddc;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto 10px auto;
+}
+
+.step-icon div>i {
+    color: #fd8c1c;
+    font-size: 2.9rem;
+}
+
+.line {
+    border: 10px;
+}
+
+.step-line {
+    width: 62vw;
+    height: 2px;
+    background: linear-gradient(to right, #f7cea4, #f7af67, #f98d22);
+    border: none;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+.easy-step-content {
+    margin: auto 60px;
+}
+.easy-step-content div>h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Radio Canada, Sans-serif;
+}
+
+.easy-step-content div>p {
+    font-size: 1.0rem;
+    font-family: Poppins, sans-serif;
+}
+
+.count-box {
+    justify-content: space-between;
+}
+
+.count-box div {
+    margin: -40px 60px auto 60px;
+    background-color: #ffffff;
+    height: 50px;
+    width: 50px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border-radius: 50px;
+    border: 3px solid #ffe3c6;
+    padding: 18px;
+    color: #ff840c;
+    line-height: 10px;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    left: 0;
+}
+
+@media (max-width: 992px) {
+    .insta-boxes-content {
+        width: 90vw !important;
+        margin-top: 100px !important;
+    }
+
+    .step-line {
+        width: 90vw;
+    }
+
+    .count-box div {
+        margin: -40px 90px auto 90px !important;
+    }
+
+    .easy-step-content {
+        margin: auto;
+    }
+
+    .step-icons-section {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .insta-boxes-content {
+        width: 90vw !important;
+        margin-top: 100px !important;
+    }
+
+    .step-line {
+        width: 90vw;
+    }
+
+    .count-box div {
+        margin: -40px 60px auto 60px !important;
+    }
+
+    .easy-step-content {
+        margin: auto;
+    }
+
+    .step-icons-section {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 576px) {
+    .insta-boxes-content {
+        width: auto !important;
+        margin-top: 100px !important;
+    }
+
+    .insta-boxes-content h4 {
+        font-size: 1.3rem !important;
+        font-family: Radio Canada, Sans-serif;
+        font-weight: 600;
+    }
+
+    .insta-boxes-content>h2 {
+        font-size: 1.5rem !important;
+        font-weight: 500;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .insta-boxes-content p {
+        font-size: 0.9rem !important;
+        font-weight: 400;
+    }
+    .easy-step-mob-content b {
+        background-color:transparent;
+        height: 50px;
+        width: 50px;
+        font-size: 1.8rem;
+        font-weight: 600;
+        border-radius: 50px;
+        border: 3px solid #f5ca9d;
+        padding: 12px;
+        color: #ff840c;
+        display: inline-block;
+        line-height: 20px;
+        position: absolute;
+        margin-top: -90px  !important;
+    }
+    .step-section-mobile {
+        display: block;
+    }
+ .step-section-mobile>  .owl-theme .owl-dots .owl-dot {
+        display: inline-block !important;
+        zoom: 1;
+    }
+   .step-section-mobile>   .owl-theme .owl-dots .owl-dot span {
+    background:rgb(255, 166, 0);
+}
+}
+
+/* Reason to buy insta followers */
+.reason-insta-followers {
+    margin-top: 120px;
+    width: 70vw;
+}
+.reason-to-buy h2 {
+    font-size: 2.6rem;
+    font-family: Radio Canada, Sans-serif;
+    font-weight: 700;
+    color: rgb(31, 31, 31);
+}
+.reason-to-buy h2 span {
+    color: #ff840c;
+}
+
+.reason-to-buy p {
+    font-size: 1.0rem;
+    font-family: Poppins, sans-serif;
+}
+
+.buy-insta-img {
+    padding-left: 100px;
+}
+
+@media (max-width: 992px) {
+    .reason-insta-followers {
+        margin-top: 90px;
+        width: auto;
+    }
+
+    .reason-to-buy h2 {
+        font-size: 2.1rem;
+    }
+
+    .buy-insta-img {
+        padding-left: 0px;
+    }
+
+    .buy-insta-img img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .reason-insta-followers {
+        margin-top: 90px;
+        width: auto;
+    }
+
+    .reason-to-buy h2 {
+        font-size: 2.0rem;
+    }
+
+    .buy-insta-img {
+        padding-left: 0px;
+    }
+
+    .reason-to-buy p {
+        font-size: 0.9rem;
+    }
+
+    .buy-insta-img img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .reason-insta-followers {
+        margin-top: 90px;
+        width: auto;
+    }
+
+    .reason-to-buy h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .buy-insta-img {
+        padding-left: 0px;
+    }
+
+    .reason-to-buy p {
+        font-size: 1.0rem !important;
+        text-align: center !important;
+    }
+
+    .buy-insta-img img {
+        width: 90%;
+        justify-content: center;
+    }
+
+}
+
+/* 3boxes */
+.boxes03-section {
+    width: 73vw;
+    justify-content: center;
+    margin: 70px 230px;
+    display: flex;
+}
+
+.box-03 {
+    width: 23vw;
+    margin-right: 20px;
+    background-image: url('https://followerzoid.com/wp-content/uploads/2025/02/home-sect-new-shadow2.svg');
+}
+
+.box-03 img {
+    width: 80px;
+    height: 80px;
+    margin-top: 50px;
+    padding-right: 10px;
+}
+
+.box-03 div>h4 {
+    font-size: 1.1rem;
+    color: black;
+    padding: 40px 0 0 35px;
+    font-weight: 600;
+    font-family: Radio Canada, Sans-serif;
+}
+
+.box-03 div>p {
+    font-size: 0.9rem;
+    padding-left: 24px;
+    font-family: Poppins, sans-serif;
+}
+
+@media (max-width: 992px) {
+    .boxes03-section {
+        width: auto;
+        justify-content: center;
+        margin: 60px 20px 0 20px;
+        display: block;
+    }
+
+    .box-03 {
+        width: 100% !important;
+        margin: 60px auto auto auto !important;
+        background-image: url('');
+        background-color: rgb(248, 238, 223);
+        padding: 70px;
+        border: 1.5px solid none;
+        clip-path: polygon(10% 0%, 90% 0%, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0% 90%, 0% 10%);
+    }
+
+    .box-03 img {
+        width: 100px;
+        height: 100px;
+        margin-top: 20px;
+        padding-right: 15px;
+    }
+
+    .box-03 div>p {
+        font-size: 1.2rem;
+        padding-left: 40px;
+    }
+
+    .box-03 div>h4 {
+        font-size: 1.4rem;
+        padding: 15px 0 0 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .boxes03-section {
+        width: auto;
+        justify-content: center;
+        margin: 60px 0 0 0;
+        display: block;
+    }
+
+    .box-03 {
+        width: 100% !important;
+        margin: 60px 0 0 25px !important;
+        padding: 50px !important;
+    }
+
+    .box-03 img {
+        width: 100px;
+        height: 100px;
+        margin-top: 20px;
+        padding-right: 15px;
+    }
+
+    .box-03 div>p {
+        font-size: 1.1rem;
+        padding-left: 40px;
+    }
+
+    .box-03 div>h4 {
+        font-size: 1.7rem;
+        padding: 15px 0 0 35px;
+    }
+}
+
+@media (max-width: 576px) {
+    .boxes03-section {
+        width: auto;
+        justify-content: center;
+        margin: 50px 0 0 0;
+        display: block;
+    }
+
+    .box-03 {
+        text-align: center !important;
+        width: 100% !important;
+        margin: 60px auto auto auto !important;
+        padding: 20px !important;
+    }
+
+    .box-03 img {
+        width: 70px;
+        height: 70px;
+        margin-top: 50px;
+        padding-right: 5px;
+    }
+
+    .box-03 div>p {
+        font-size: 0.8rem !important;
+        padding-left: 10px !important;
+        text-align: left;
+    }
+
+    .box-03 div>h4 {
+        font-size: 1.0rem;
+        text-align: left;
+    }
+}
+
+/* multiple followers boxes  */
+.insta-boxes-content {
+    width: 70vw;
+    margin-top: 160px !important;
+}
+
+.insta-boxes-content h4 {
+    font-size: 1.1rem;
+    font-family: Radio Canada, Sans-serif;
+    font-weight: 600;
+    color: #313030;
+}
+
+.insta-boxes-content h2 {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #272727;
+    font-family: Radio Canada, Sans-serif;
+}
+
+.insta-boxes-content h2 span {
+    color: #ff840c;
+}
+
+.insta-boxes-content p {
+    font-size: 1.0rem;
+    font-weight: 400;
+    color: #000000;
+    font-family: Poppins, sans-serif;
+}
+
+.boxes {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1.5px solid #eeeeee;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    transition: 0.4s;
+    margin: 10px;
+    width: 23vw;
+}
+
+.boxes:hover {
+    border: 1.5px solid #ff840c;
+    box-shadow: 2px 2px 2px rgba(153, 153, 153, 0.3);
+    transition: 0.4s;
+}
+
+.boxes h3 {
+    font-size: 1.5rem;
+    font-weight: 550;
+    font-family: Radio Canada, Sans-serif;
+    color: #54595f;
+}
+
+.boxes p {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #090909;
+    font-family: Poppins, sans-serif;
+}
+
+.boxes-section {
+    margin: 30px 50px 0 auto;
+}
+
+@media (max-width: 992px) {
+    .insta-boxes-content {
+        width: auto;
+    }
+
+    .insta-boxes-content h4 {
+        font-size: 1.1rem !important;
+    }
+
+    .insta-boxes-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .boxes p {
+        font-size: 0.9rem !important;
+    }
+
+    .boxes {
+        width: 30vw;
+    }
+
+    .boxes-section {
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .insta-boxes-content {
+        width: auto;
+    }
+
+    .insta-boxes-content h4 {
+        font-size: 1.4rem !important;
+    }
+
+    .insta-boxes-content h2 {
+        font-size: 1.8rem;
+        text-align: left;
+    }
+
+    .insta-boxes-content p {
+        text-align: left;
+    }
+
+    .boxes p {
+        font-size: 0.9rem;
+    }
+
+    .boxes h3 {
+        font-size: 1.2rem;
+    }
+
+    .boxes {
+        width: 28vw;
+        padding: 20px 10px;
+        margin: 10px;
+    }
+
+    .boxes-section {
+        margin: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .insta-boxes-content {
+        width: auto;
+    }
+
+    .insta-boxes-content h4 {
+        font-size: 1.1rem !important;
+    }
+
+    .insta-boxes-content h2 {
+        font-size: 1.6rem;
+        text-align: left;
+    }
+
+    .insta-boxes-content p {
+        text-align: left;
+    }
+
+    .boxes {
+        width: 95vw;
+    }
+}
+
+/* our gallery */
+.our-gallery {
+    margin-top: 60px;
+    padding: 100px 0;
+    background-color: #fff9f2;
+}
+
+.our-gallery div {
+    width: 70vw;
+}
+
+.our-gallery div h2 {
+    font-size: 1.8rem;
+    font-weight: 550;
+    color: #ff8000;
+    font-family: Radio Canada, Sans-serif;
+}
+
+.our-gallery div p {
+    font-size: 1.1rem;
+    font-weight: 450;
+    font-family: Poppins, sans-serif;
+}
+
+.review-btn {
+    background-color: #ff8000;
+    border: none;
+    border-radius: 40px;
+    padding: 20px 60px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    align-items: center;
+    color: #fff;
+}
+
+.review-btn:hover {
+    background-color: #61ce70;
+    transition: 0.4s;
+}
+
+@media (max-width: 992px) {
+    .our-gallery div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .our-gallery div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .our-gallery div {
+        width: 100%;
+    }
+
+    .our-gallery div h2 {
+        font-size: 1.6rem !important;
+    }
+
+    .our-gallery div p {
+        font-size: 1.0rem;
+    }
+
+    .review-btn {
+        padding: 20 80px !important;
+    }
+}
+
+/* Followerzoid-followers */
+.buy-insta-Followerzoid {
+    width: 75vw;
+    margin-top: 150px;
+}
+
+.buy-insta-Followerzoid div>div img {
+    width: 30vw;
+}
+
+.Followerzoid-followers h2 {
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: #222222;
+    font-family: Radio Canada, Sans-serif;
+}
+
+.Followerzoid-followers h2 span {
+    color: orange;
+}
+
+.Followerzoid-followers p {
+    font-size: 1.0rem;
+    font-family: Poppins, sans-serif;
+}
+
+.Followerzoid-followers ul {
+    font-size: 1.0rem;
+    padding-left: 100px;
+}
+
+@media (max-width: 992px) {
+    .buy-insta-Followerzoid {
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .buy-insta-Followerzoid div>div img {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .Followerzoid-followers h2 {
+        font-size: 2.0rem !important;
+    }
+
+    .Followerzoid-followers ul {
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .buy-insta-Followerzoid {
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .buy-insta-Followerzoid div>div img {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .Followerzoid-followers h2 {
+        font-size: 2.0rem !important;
+    }
+
+    .Followerzoid-followers ul {
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .buy-insta-Followerzoid {
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .buy-insta-Followerzoid div>div img {
+        width: 100%;
+    }
+
+    .Followerzoid-followers h2 {
+        font-size: 1.4rem !important;
+        margin-top: 20px;
+    }
+
+    .Followerzoid-followers ul {
+        padding-left: 40px;
+    }
+}
+
+/* Comparison Between FollowerZoid */
+.Comparison-section {
+    margin-top: 100px;
+}
+
+.Comparison-btwn h3 {
+    color: #ff8000;
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: Radio Canada, Sans-serif;
+}
+
+.Comparison-btwn p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: Poppins, sans-serif;
+    color: #111111;
+}
+
+@media (max-width: 992px) {
+    .Comparison-btwn h3 {
+        font-size: 1.8rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .Comparison-btwn h3 {
+        font-size: 1.8rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .Comparison-btwn h3 {
+        font-size: 1.4rem !important;
+    }
+}
+
+/* table */
+.table-heading {
+    padding: 30px;
+}
+
+.comparison-table {
+    width: 70vw;
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 2px 2px rgba(63, 63, 63, 0.2);
+}
+
+.comparison-table th,
+.comparison-table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px;
+}
+
+.highlight-row {
+    background-color: #ff840c;
+    color: white;
+    font-weight: bold;
+}
+
+.rounded-table {
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.table-bordered {
+    border: 1px solid none;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.follwerzoid-row td {
+    background-color: #ff840c;
+    color: #fff;
+}
+
+.follwerzoid-row td>span {
+    color: #fff;
+}
+
+.table-bordered th {
+    padding: 40px;
+    color: white;
+    background-color: #ff840c;
+}
+
+.highlight-row {
+    background-color: #f8f9fa;
+}
+
+.follwerzoid-row {
+    background-color: #e67300;
+}
+
+.check-icon {
+    color: #12b34c;
+    font-size: 2.0rem;
+}
+
+.cross-icon {
+    color: #f86363;
+    font-size: 2.0rem;
+}
+
+/* cheap to buy Instagram followers */
+.cheap-safe-content h2 {
+    font-size: 2.1rem;
+    font-weight: 550;
+    color: #252525;
+    font-family: Radio Canada, Sans-serif;
+}
+
+.cheap-safe-content h2>span {
+    color: #ff840c;
+}
+
+.cheap-safe-content p {
+    font-size: 1.0rem;
+    font-family: Poppins, sans-serif button;
+}
+
+.cheap-safe-content {
+    width: 40vw;
+}
+
+.cheap-safe {
+    margin: 130px 0 0px 220px;
+}
+
+.img-cheap-safe img {
+    margin-left: 100px;
+}
+
+@media (max-width: 992px) {
+    .cheap-safe-content {
+        width: 45vw;
+    }
+
+    .cheap-safe-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .cheap-safe {
+        margin: 100px 0 0 0;
+    }
+
+    .img-cheap-safe img {
+        width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .cheap-safe-content {
+        width: 100%;
+    }
+
+    .cheap-safe-content h2 {
+        font-size: 2.1rem;
+    }
+
+    .cheap-safe {
+        margin: 100px 0 0 30px;
+    }
+
+    .img-cheap-safe img {
+        margin-left: 100px;
+        width: 50vw;
+    }
+}
+
+@media (max-width: 576px) {
+    .cheap-safe-content {
+        width: 100% !important;
+    }
+
+    .cheap-safe-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .cheap-safe {
+        margin: 100px 0 0 0;
+    }
+
+    .img-cheap-safe img {
+        margin-left: 0;
+        width: 90vw;
+        height: 100%;
+    }
+}
+
+/* looking for section */
+.looking-for-bg {
+    background-color: #ff8309;
+    border-radius: 40px;
+    width: 70vw;
+    margin: 50px auto;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.looking-for-bg img {
+    width: 280px;
+    max-width: 100%;
+}
+
+.looking-for-content h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-bottom: 30px;
+    font-family: Radio Canada, Sans-serif;
+}
+
+.james-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.looking-for-content button {
+    padding: 20px 25px;
+    border: none;
+    border-radius: 15px;
+    background-color: #000;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.looking-for-content button:hover {
+    background-color: #fff;
+    color: #ff8309;
+}
+
+.looking-for-content img {
+    width: 50px;
+    height: 50px;
+}
+
+.looking-for-content p {
+    font-size: 1rem;
+    font-family: Poppins, sans-serif;
+}
+
+@media (max-width: 992px) {
+    .looking-for-bg {
+        width: 90vw;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .james-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .looking-for-content button {
+        font-size: 0.9rem;
+        padding: 20px 30px;
+        margin-bottom: 10px;
+    }
+
+    .looking-for-content img {
+        margin: auto;
+        width: 70px !important;
+        height: 70px !important;
+    }
+
+    .looking-for-content h3 {
+        padding-top: 10px;
+        font-size: 2.1rem !important;
+    }
+
+    .main-img {
+        width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .looking-for-content img {
+        width: 70px !important;
+        height: 70px !important;
+    }
+
+    .looking-for-content button {
+        font-size: 0.9rem;
+        padding: 15px 25px;
+        margin-bottom: 10px;
+    }
+
+    .main-img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .looking-for-bg {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .looking-for-bg img {
+        width: 180px;
+        margin: auto;
+    }
+
+    .looking-for-content h3 {
+        padding-top: 10px;
+        font-size: 1.3rem !important;
+    }
+
+    .james-section {
+        display: block;
+        text-align: center;
+    }
+
+    .looking-for-content button {
+        font-size: 0.9rem;
+        padding: 15px 25px;
+        margin-bottom: 10px;
+    }
+
+    .looking-for-content img {
+        margin: auto;
+        width: 60px;
+        height: 60px;
+
+    }
+}
+
+/* zero-chance */
+.zero-chance {
+    margin-top: 80px !important;
+}
+
+.zero-chance div>div>img {
+    margin-top: 50px;
+}
+
+/* slider boxes  */
+.slider-text h2 {
+    font-size: 2.1rem;
+    font-weight: bold;
+    font-family: Radio Canada, Sans-serif;
+}
+
+.slider-text h2>span {
+    color: #ff8309;
+}
+
+.slider-text p {
+    font-size: 1.1rem;
+    font-family: Poppins, sans-serif;
+}
+
+.slider-text {
+    margin-top: 120px;
+}
+
+.slider-text span>i {
+    font-size: 2.5rem;
+}
+
+@media (max-width: 576px) {
+    .slider-text h2 {
+        font-size: 1.7rem;
+    }
+}
+
+.review-box {
+    width: 22vw;
+    padding: 25px;
+    border: 1.5px solid rgb(225, 225, 225);
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    transition: background-color 0.5s ease-in-out;
+    margin: auto;
+}
+
+.review-box p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #262626;
+}
+
+.review-box span>i {
+    font-size: 1.8rem;
+    color: #0fc585;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.review-box img {
+    width: 120px !important;
+    margin: auto !important;
+
+}
+.review-box::before {
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(233 233 233 / 25%);
+    transition: bottom 0.5s ease-in-out;
+}
+
+.review-box:hover::before {
+    bottom: 0;
+}
+
+.divider {
+    border: 2px solid orange;
+    border-radius: 10px;
+    width: 40px;
+    margin: auto;
+}
+
+.review-box-section {
+    width: 70vw;
+    margin: auto;
+}
+
+.owl-prev,
+.owl-next {
+    background-color: rgb(205, 203, 203) !important;
+    color: rgb(0, 0, 0) !important;
+    width: 50px;
+    height: 50px;
+    display:flex;
+    align-items: end !important;
+    justify-content: flex-end !important;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+ opacity: .8;
+}
+@media (max-width: 992px) {
+    .review-box {
+        width:100%;
+        margin: 0;}
+        .review-box-section {
+            width: 80vw;
+            margin: auto;
+        }
+    }
+@media (max-width: 768px) {
+    .review-box {
+        width:100%;
+        margin: 0;}
+        .review-box-section {
+            width: 80vw;
+            margin: auto;
+        }
+}
+@media (max-width: 576px) {
+    .review-box {
+        width:100%;
+        margin: 0;}
+        .review-box-section {
+            width: 80vw;
+            margin: auto;
+        }
+    }
+    
+/* FAQS section */
+.AQ-section {
+    width: 71vw;
+    margin: 80px auto;
+}
+
+.AQ-section div {
+    background-color: #ffdfc1;
+    border-radius: 30px;
+    padding: 25px 20px;
+}
+
+.Faqs-title h2 {
+    font-size: 2.1rem;
+    font-weight: 600;
+    font-family: Radio Canada, Sans-serif;
+}
+
+.Faqs-title p {
+    font-size: 1.0rem;
+    padding-right: 40px;
+    color: #000;
+    font-family: Poppins, sans-serif;
+}
+
+.faq-box div {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: -50px;
+}
+
+.accordion-item {
+    margin: -50px;
+}
+
+.accordion-button {
+    font-weight: bold;
+    color: #333;
+    background-color: white;
+    border: none;
+    transition: 0.4s;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #ff840c;
+    color: white;
+}
+
+.accordion-body {
+    background-color: #ffffff;
+    border: 1px solid #d9d9d9;
+    margin: auto -20px;
+}
+
+.icon {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.accordion-item {
+    border: none;
+}
+
+@media (max-width: 992px) {
+    .AQ-section {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .AQ-section {
+        width: 100%;
+    }
+
+    .Faqs-title h2 {
+        font-size: 1.5rem;
+    }
+
+    .Faqs-title p {
+        padding: 0;
+    }
+
+    .accordion-item {
+        margin: -50px -80px;
+    }
+
+    .accordion-button {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .AQ-section {
+        width: 100%;
+    }
+
+    .Faqs-title h2 {
+        font-size: 1.5rem;
+    }
+
+    .Faqs-title p {
+        padding: 0;
+    }
+
+    .accordion-item {
+        margin: -50px -80px;
+    }
+
+    .accordion-button {
+        font-size: 0.9rem;
+    }
+}
+
+/* get followers section  */
+.get-followers {
+    width: 73vw;
+    margin: 60px auto;
+}
+
+.buy-followers {
+    background-image: url('Assets/shape-pattern.svg');
+    background-color: #ff8309;
+    padding: 120px 0px 60px 0;
+    border-radius: 20px;
+}
+
+.buy-followers img {
+    width: 100px;
+}
+
+.buy-followers h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.buy-followers p {
+    font-size: 0.9rem;
+}
+
+.custom-button {
+    background-color: #fafafa;
+    color: #ff8000;
+    border: none;
+    padding: 10px 25px;
+    font-size: 1.0rem;
+    border-radius: 8px;
+}
+
+@media (max-width: 992px) {
+    .get-followers {
+        width: 95vw;
+    }
+
+    .buy-followers img {
+        width: 90px;
+    }
+
+    .buy-followers h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .get-followers {
+        width: 95vw;
+    }
+
+    .buy-followers img {
+        width: 80px;
+    }
+
+    .buy-followers h1 {
+        font-size: 2.1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .get-followers {
+        width: 95vw;
+    }
+
+    .buy-followers img {
+        width: 70px;
+    }
+
+    .buy-followers h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* footer */
+.footer-section {
+    background-image: url("Assets/footer-svg.svg");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.social-img img {
+    border-radius: 50%;
+    align-items: center;
+    margin: 5px;
+    margin-top: 50px;
+}
+
+.foooter-logo img {
+    width: 250px;
+    height: 250px;
+    margin-top: -120px !important;
+}
+
+.foooter-logo p {
+    color: #464646;
+    font-size: 1.1rem;
+    margin-top: -80px !important;
+    font-family: Poppins, sans-serif;
+}
+
+.useful-links ul li a {
+    text-decoration: none;
+    color: #464646;
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: Poppins, sans-serif;
+}
+
+.useful-links ul li a:hover {
+    color: #ff8000;
+    transition: 0.4s;
+}
+
+.useful-links h4 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #ff8000;
+    font-family: Radio Canada, Sans-serif;
+}
+
+.copy-right {
+    background: #ff8000;
+    color: #fff;
+}
+
+.footer-inner-content {
+    padding-top: 400px;
+    width: 100%;
+    padding-left: auto;
+}
+
+@media (max-width: 992px) {
+    .foooter-logo img {
+        margin-left: -10px !important;
+        width: 200px;
+    }
+
+    .foooter-logo p {
+        margin-left: -10px !important;
+    }
+
+    .footer-inner-content {
+        padding-top: 430px;
+    }
+
+    .useful-links {
+        margin: -10px 0 0 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-section {
+        background-image: url("Assets/mob-footer-svg.svg");
+        background-size: cover;
+        background-position: top center !important;
+    }
+
+    .footer-inner-content {
+        width: 100% !important;
+        padding-top: 380px;
+    }
+
+    .social-img {
+        margin-top: 120px;
+    }
+
+    .social-img img {
+        margin-left: -5px !important;
+    }
+
+    .foooter-logo img {
+        width: 150px;
+        width: 150px;
+        margin: -15px 0 0 -20px !important;
+    }
+
+    .foooter-logo p {
+        margin-left: -20px;
+        font-size: 1.0rem;
+    }
+
+    .useful-links h4 {
+        font-size: 1.2rem !important;
+    }
+
+    .useful-links {
+        margin-top: 100px !important;
+        margin-bottom: -40px !important;
+    }
+
+    .useful-links ul li a {
+        font-size: 0.9rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-inner-content {
+        width: 100% !important;
+        display: block !important;
+        padding: 0 !important;
+    }
+
+    .footer-content {
+        background-color: #e0e0e0;
+    }
+
+    .footer-inner-content div {
+        margin-top: -20px !important;
+    }
+
+    .useful-links h4 {
+        text-align: center !important;
+        padding-top: 10px !important;
+    }
+
+    .useful-links ul {
+        text-align: center !important;
+    }
+
+    .social-img {
+        justify-content: center !important;
+    }
+
+    .foooter-logo {
+        margin: auto 10px !important;
+        text-align: center !important;
+        padding-left: 30px !important;
+    }
+
+    .foooter-logo p {
+        text-align: center !important;
+        font-size: 1.0rem !important;
+        margin-left: auto !important;
+        /* padding-left: 15px ; */
+
+    }
+
+    .footer-section {
+        background-image: url("Assets/mob-footer-svg.svg");
+        background-size: contain;
+        padding-top: 150px !important;
+        height: auto;
+        padding-right: 0 !important;
+    }
+}
+
+/*  css for instagram page */
+.follower-menu {
+    width: 40vw;
+    margin: 30px auto;
+}
+
+.follower-menu ul>a {
+    margin: auto 3px;
+    border: 2px solid #ff8309;
+    border-radius: 18px;
+    background-color: transparent;
+    padding: 20px;
+    color: #8d8d8d;
+    font-size: 1.0rem;
+    font-family: Poppins, sans-serif;
+}
+
+.follower-menu ul>a:active {
+    background-color: #ff8309 !important;
+}
+.active-button{
+    background-color: #ff8309 !important;
+    color: #fff !important;
+}
+
+.follower-menu ul>a:hover {
+    background-color: rgb(250, 246, 238);
+    transition: 0.3s;
+}
+
+@media (max-width: 992px) {
+    .follower-menu {
+        width: 70vw !important;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .follower-menu {
+        width: 85vw !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .follower-menu {
+        width: 90vw;
+        overflow-x: scroll;
+    }
+
+}
+
+/* get followers section  instagram page */
+.pink-get-followers {
+    border-radius: 20px;
+    /* width: 72vw; */
+}
+
+.buy-followers-pink {
+    padding-top: 120px;
+    background-color: #ff59c1;
+}
+
+.custom-button-pink {
+    color: #ff59c1;
+}
+
+/* FAQS section insta pg */
+.AQ-section-insta-pg div {
+    background-color: #ffe5f5;
+}
+
+/* looking for section  */
+.looking-for-pink {
+    background-color: #ff59c1 !important;
+}
+
+.looking-for-pink div>button:hover {
+    color: #ff59c1 !important;
+}
+
+/* buying followers insta pg  */
+.buying-followers-content {
+    margin: 80px 250px;
+    width: 70vw;
+}
+
+.buying-followers-content div>div h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding-top: 60px;
+}
+
+.buying-followers-content div>div p {
+    font-family: Poppins, sans-serif;
+    font-size: 0.97rem;
+    font-weight: 400;
+}
+
+.follower-list li span {
+    color: #ff0fa5;
+}
+
+.follower-list li {
+    font-size: 1.0rem;
+    font-family: Poppins, sans-serif;
+}
+
+.buy-instafollowers-img {
+    padding-left: 150px;
+}
+
+@media (max-width: 992px) {
+    .buying-followers-content {
+        margin: 80px 20px;
+        width: 100%;
+    }
+
+    .buying-followers-content div>div h2 {
+        font-size: 1.7rem;
+        padding-top: 30px;
+    }
+
+    .buy-instafollowers-img {
+        padding-left: 70px;
+    }
+
+    .buy-instafollowers-img img {
+        width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .buying-followers-content {
+        margin: 80px 0px;
+        width: 100%;
+    }
+
+    .buying-followers-content div>div h2 {
+        font-size: 1.7rem;
+        padding-top: 30px;
+    }
+
+    .buy-instafollowers-img {
+        padding-left: 30px;
+    }
+
+    .buy-instafollowers-img img {
+        width: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .buying-followers-content {
+        margin: 80px 0px;
+        width: 100%;
+    }
+
+    .buying-followers-content div>div h2 {
+        font-size: 1.5rem;
+        padding-top: 0px;
+    }
+
+    .buy-instafollowers-img {
+        padding-left: 30px;
+    }
+
+    .buy-instafollowers-img img {
+        width: 80%;
+        justify-content: center !important;
+    }
+}
+
+/* table-pink instgagram */
+.table-bordered-pink th {
+    background-color: #ff0fa5;
+}
+
+.pink-row-table td>span {
+    color: #fff;
+}
+
+.pink-row-table td {
+    background-color: #ff0fa5;
+    color: #fff;
+}
+
+.Comparison-btwn-pink h3 {
+    color: #ff0fa5;
+}
+
+/* 3steps-pink insta pg */
+.step-iconsection-pink div>div>i,
+.mobile-step-icon {
+    color: #ff11a5;
+}
+
+.mobile-count-box {
+    display: none;
+}
+
+.pink-step-line {
+    width: 100%;
+    background: linear-gradient(to right, #f9b1dd, #fd60c1, #ff11a5);
+}
+
+.count-box-pink div {
+    color: #ff11a5;
+    margin: -40px 165px auto 165px;
+}
+
+.step03-for-insta {
+    margin-top: -60px !important;
+}
+
+@media (max-width: 992px) {
+    .count-box-pink div {
+        margin: -40px 125px auto 125px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .count-box-pink div {
+        margin: -40px 90px auto 85px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .content-mobile-box {
+        margin-left: auto;
+    }
+
+    .content-mobile-box h3 {
+        font-size: 1.3rem !important;
+        text-align: left;
+    }
+
+    .content-mobile-box p {
+        font-size: 0.9rem !important;
+        text-align: left;
+    }
+
+    .mobile-count-box {
+        margin: 0 15px 0 -10px;
+        display: block;
+    }
+
+    .mobile-count-box div {
+        background-color: #ffffff;
+        height: 50px;
+        width: 50px;
+        font-size: 1.8rem;
+        font-weight: 600;
+        border-radius: 50px;
+        border: 3px solid #ffe3c6;
+        color: #ff11a5;
+    }
+
+    .step-iconsection-pink {
+        display: none;
+    }
+}
+
+/* short-pink text box */
+.short-content-box {
+    background-color: #fff3f1;
+    width: 77vw;
+    border-radius: 10px;
+}
+
+.short-content-box div>p {
+    font-size: 1.1rem;
+    font-family: Poppins, sans-serif;
+    color: #000;
+}
+
+@media (max-width: 992px) {
+    .short-content-box {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .short-content-box {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 576px) {
+    .short-content-box {
+        width: 90vw;
+    }
+
+    .short-content-box div>p {
+        font-size: 0.9rem;
+    }
+}
+
+/* sliders boxes instagram pg */
+.insta-slides-box {
+    width: 70vw;
+    margin-top: 100px;
+}
+
+.insta-slides-box h2 {
+    font-size: 2.5rem;
+    font-family: Radio Canada, Sans-serif;
+    font-weight: 650;
+}
+
+.insta-slides-box p {
+    font-size: 1.0rem;
+    font-family: Poppins, sans-serif;
+    font-weight: 450;
+}
+.insta-pg-slider{
+ width: 20vw;
+ margin: 0px;
+}
+.insta-slide-box{
+    width: 60vw;
+}
+
+.insta-pg-slider {
+    width: 23vw;
+    padding: 20px;
+    position: relative;
+    border-radius: 20px;
+    background: white;
+    color: black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.insta-pg-slider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 2px;
+    background: linear-gradient(45deg, #c33b56, #5908c4);
+    -webkit-mask: 
+        linear-gradient(white, white) content-box,
+        linear-gradient(white, white);
+    mask: 
+        linear-gradient(white, white) content-box,
+        linear-gradient(white, white);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+.insta-pg-slider div > h2{
+       font-size:1.5rem;
+       color:#1f004e;
+       font-weight:600;
+      }
+      .insta-pg-slider div > img{
+          width:50px !important;
+   }
+      .insta-pg-slider  p{
+        padding-top: 10px;
+          font-size:1.1rem;
+          color:#4F4F4F;
+          font-weight:280;
+      }
+@media (max-width: 992px) {
+    .insta-slides-box {
+        width: 100%;
+    }
+    .insta-slides-box h2 {
+        font-size: 2.1rem;
+    }
+    .insta-pg-slider{
+        width: 100%;
+       }
+       .insta-slide-box{
+           width:auto;
+       }
+}
+
+@media (max-width: 768px) {
+    .insta-slides-box {
+        width: 100%;
+    }
+
+    .insta-slides-box h2 {
+        font-size: 2.1rem;
+    }
+    .insta-pg-slider{
+        width: 100%;
+       }
+       .insta-slide-box{
+           width:auto;
+       }
+}
+
+@media (max-width: 576px) {
+    .insta-slides-box {
+        width: 100%;
+    }
+
+    .insta-slides-box h2 {
+        font-size: 1.4rem;
+    }
+}
+
+/* Wrapper for the scrolling image effect */
+.scrolling-wrapper {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.scrolling-container {
+    display: flex;
+    width: 200%;
+    height: 100%;
+    animation: scrollBackground 20s linear infinite;
+}
+
+.scrolling-image {
+    width: 100%;
+    height: 500%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Keyframes for scrolling animation */
+@keyframes scrollBackground {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* insta-pricing-table banner section */
+.insta-pg-banner {
+    width: 70vw;
+    margin: 60px auto;
+}
+
+.insta-pg-banner-content h1 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    font-family: Radio Canada, Sans-serif;
+    color: #ff11a5;
+    margin-right: 100px;
+}
+
+.insta-pg-banner-content p {
+    font-family: Poppins, sans-serif;
+    font-size: 1.2rem;
+}
+
+.review04-img img {
+    width: 40px;
+}
+
+.insta-pg-banner-content div>div>img,
+.mobile-star-section>div>img {
+    border-radius: 50%;
+}
+
+.instapg-inner-content {
+    align-items: center;
+    width: 28vw;
+    background-color: #f8fdff;
+    border-radius: 20px;
+    border: 2px solid #e6eef2;
+    justify-content: flex-start;
+    padding: 12px 12px 7px 12px;
+}
+
+.instapg-inner-content div {
+    padding-left: 20px;
+}
+
+.star-insta-img img {
+    width: 110px;
+    padding-top: 5px !important;
+}
+
+.instapg-inner-content span {
+    color: #1f82ac;
+    font-size: 1.4rem;
+    padding: 5px 10px 0 0;
+}
+
+.instapg-inner-content p {
+    font-size: 0.9rem;
+    text-align: center;
+    align-items: center !important;
+}
+.animate-text {
+    position: relative;
+width: 12vw !important;
+}
+
+.animate-text p {
+    position: absolute;
+    opacity: 0;
+    font-size: 1.2rem;
+    font-family:Poppins, sans-serif;
+    transform: translateY(100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.animate-text p >span{
+color: rgb(255, 168, 6);
+}
+.animate-text p.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+.insta-pricing-table {
+    margin-left: 70px;
+    background-color: #ffffff;
+    padding: 30px;
+    width: 25vw;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.insta-pricing-table div>h2 {
+    font-weight: 700;
+    font-family: Radio Canada, Sans-serif;
+    font-size: 1.7rem;
+    color: #ff0fa5;
+}
+
+.insta-pricing-table div ul>li {
+    font-family: Poppins, sans-serif;
+    font-size: 1.0rem;
+    font-weight: 400;
+    margin: 5px auto;
+}
+
+.insta-pricing-table div ul>li>span {
+    font-size: 1.3rem;
+    color: #39c983;
+}
+
+.package-option {
+    background: #f7f7f7;
+    border-radius: 20px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.package-option input {
+    margin-right: 10px;
+}
+.package-option input:active{
+  background: #000a11;
+}
+.discount-badge {
+    background: #15d24e;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+.dropdown-package {
+    border: 2px solid #ff0fa5;
+    color: #ff0fa5;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.dropdown-package .discount-badge {
+    background: #ff0fa5;
+}
+
+.price {
+    font-size: 2.1rem;
+    font-weight: bold;
+}
+
+.buy-btn {
+    width: 130px;
+    background: #ff0fa5;
+    color: #fff;
+    padding: 12px 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.buy-btn:hover {
+    opacity: 0.8;
+}
+.show-option {
+    display: block !important;
+}
+.hide-package {
+    display: none;
+}
+@media (max-width: 992px) {
+    .insta-pg-banner {
+        width: 100%;
+    }
+
+    .insta-pricing-table {
+        width: 45vw;
+        margin: 0;
+    }
+
+    .instapg-inner-content {
+        width: 40vw !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .insta-pg-banner {
+        width: 100%;
+    }
+
+    .insta-pg-banner-content h1 {
+        font-size: 1.6rem;
+        margin: auto;
+    }
+
+    .insta-pg-banner-content p {
+        font-size: 1.0rem;
+        margin-top: 10px;
+    }
+
+    .review04-img img {
+        width: 30px;
+        margin-left: -13px;
+    }
+
+    .star-insta-img img {
+        width: 80px;
+    }
+
+    .instapg-inner-content {
+        width: 40vw !important;
+    }
+
+    .instapg-inner-content span {
+        font-size: 1.0rem !important;
+        padding: 30px 5px;
+    }
+
+    .instapg-inner-content p {
+        font-size: 0.7rem;
+    }
+
+    .instapg-inner-content div {
+        padding-left: 10px;
+        align-items: center;
+    }
+
+    .insta-pricing-table {
+        width: 45vw;
+        margin: 0;
+    }
+    .animate-text {
+        width: 40% !important;
+        }
+}
+
+@media (max-width: 576px) {
+    .insta-pg-banner {
+        width: 100%;
+    }
+
+    .insta-pg-banner-content h1 {
+        font-size: 1.6rem;
+        text-align: center;
+        margin: auto;
+    }
+
+    .insta-pg-banner-content p {
+        font-size: 1.0rem;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .review04-img img {
+        width: 27px;
+        /* margin-left: 13px; */
+    }
+
+    .star-insta-img img {
+        width: 60px;
+    }
+
+    .instapg-inner-content {
+        width: 90vw !important;
+        margin: 20px 0 0 0 !important;
+        padding: 0 !important;
+    }
+
+    .instapg-inner-content span {
+        font-size: 1.0rem !important;
+        padding: 30px 5px;
+    }
+
+    .instapg-inner-content p {
+        font-size: 0.7rem;
+    }
+
+    .instapg-inner-content div {
+        padding-left: 10px;
+        align-items: center;
+    }
+
+    .insta-pricing-table {
+        width: auto;
+        margin: 0;
+    }
+    .animate-text {
+    width: 45% !important;
+    }
+}
